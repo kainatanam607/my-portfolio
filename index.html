@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kainat Anam · Social Media Manager Portfolio</title>
+<meta name="description" content="Portfolio of Kainat Anam, Social Media Manager in Sialkot, Pakistan. Content design, video, Meta Ads and Google Ads, ASO. Work for CodeLife AI, TechnoSofts and Zensol Tech.">
+<meta property="og:title" content="Kainat Anam · Social Media Manager">
+<meta property="og:description" content="Content design, video, paid ads and ASO. A selection of work for CodeLife AI, TechnoSofts and Zensol Tech.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A0F1E">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/bric-bold.ttf" as="font" type="font/ttf" crossorigin>
+<style>@font-face{font-family:'Bric';src:url(assets/fonts/bric-bold.ttf);font-weight:700;font-display:swap}
+@font-face{font-family:'Bric';src:url(assets/fonts/bric.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:'Inst';src:url(assets/fonts/inst.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:'Inst';src:url(assets/fonts/inst-bold.ttf);font-weight:700;font-display:swap}
+@font-face{font-family:'InstSerif';src:url(assets/fonts/serif-italic.ttf);font-style:italic;font-display:swap}
+@font-face{font-family:'DM Mono';src:url(assets/fonts/mono.ttf);font-display:swap}
+:root{--bg:#0A0F1E;--ink:#EAF0FA;--mut:#8A97B0;--soft:#B7C2D8;--teal:#2DD4BF;--amber:#F5B82E;--line:rgba(255,255,255,.14);--pad:clamp(20px,6vw,96px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:'Inst',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+ background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:96px 96px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-family:'Bric',sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1}
+.ital{font-family:'InstSerif',serif;font-style:italic;font-weight:400;letter-spacing:0}
+.mono{font-family:'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--mut)}
+.mono.sm{font-size:12px;letter-spacing:.06em;text-transform:none}
+.teal{color:var(--teal)}.amber{color:var(--amber)}
+.kicker{font-family:'DM Mono',monospace;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:28px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px var(--pad);background:linear-gradient(180deg,rgba(10,15,30,.92),rgba(10,15,30,.6));backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{font-family:'Bric';font-weight:700;font-size:26px;letter-spacing:-.04em}.logo span{color:var(--teal)}
+.nav nav{display:flex;gap:28px;align-items:center;font-size:15px;color:var(--soft)}
+.nav nav a:hover{color:var(--ink)}
+.pill{border:1px solid var(--teal);color:var(--teal)!important;padding:8px 18px;border-radius:999px}
+.pill:hover{background:var(--teal);color:var(--bg)!important}
+
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;padding:110px 0 40px var(--pad);position:relative;overflow:hidden;gap:20px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(130px);opacity:.3;pointer-events:none}
+.hero::before{width:640px;height:640px;background:var(--teal);left:-220px;top:-240px}
+.hero::after{width:560px;height:560px;background:#3B5BFF;right:15%;bottom:-300px}
+.hero-text{position:relative;z-index:2}
+.hero h1{font-size:clamp(68px,12vw,188px);line-height:.92;margin-bottom:28px}
+.role{font-size:clamp(30px,4vw,60px);color:var(--teal)}
+.tags{margin-top:22px;line-height:2;font-size:14px}
+.cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);padding:14px 28px;border-radius:999px;font-weight:700;transition:.2s}
+.btn:hover{border-color:var(--teal);color:var(--teal)}
+.btn.primary{background:var(--teal);color:var(--bg);border-color:var(--teal)}
+.btn.primary:hover{background:#5eead4;color:var(--bg)}
+.loc{margin-top:34px;color:var(--mut)}
+.hero-art{display:flex;gap:22px;height:calc(100svh - 70px);min-height:560px;overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 12%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%)}
+.mq{flex:1;overflow:hidden;min-width:0}
+.mq .track{display:flex;flex-direction:column;gap:22px;animation:up 60s linear infinite}
+.mq.rev .track{animation-direction:reverse;animation-duration:70s}
+.mq img{width:100%;border-radius:14px;border:1px solid var(--line)}
+@keyframes up{to{transform:translateY(-50%)}}
+
+/* sections */
+.sec{padding:clamp(70px,10vw,150px) var(--pad);position:relative}
+.sec h2{font-size:clamp(40px,6vw,92px);margin-bottom:clamp(34px,5vw,64px)}
+h2.mega{font-size:clamp(52px,10vw,150px);line-height:.95}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:start}
+.lead{font-size:clamp(18px,1.6vw,24px);line-height:1.6;color:var(--soft);max-width:720px}
+.skill{display:grid;grid-template-columns:56px 1fr;gap:6px;border-top:1px solid var(--line);padding:20px 0 24px}
+.skill h3{font-size:clamp(22px,2.2vw,32px);letter-spacing:-.01em}
+.skill p{color:#9FACC4;margin-top:8px;font-size:17px}
+.skills{margin-top:6px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(18px,3vw,44px);margin-bottom:clamp(50px,7vw,100px)}
+.stat{border-top:1px solid var(--line);padding-top:20px}
+.stat b{display:block;font-family:'Bric';font-size:clamp(40px,5.4vw,92px);letter-spacing:-.04em;line-height:1}
+.stat .mono{display:block;margin-top:14px;font-size:12px}
+.charthead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.charthead h3{font-size:clamp(26px,3vw,44px)}
+.legend{display:flex;gap:22px;flex-wrap:wrap}
+.dot{display:inline-block;width:10px;height:10px;margin-right:8px;border-radius:2px}.dot.t{background:var(--teal)}.dot.a{background:var(--amber)}
+.chart{display:flex;align-items:flex-end;gap:clamp(3px,.6vw,10px);height:clamp(220px,28vw,400px);border-bottom:1px solid var(--line);position:relative;
+ background:repeating-linear-gradient(180deg,rgba(255,255,255,.07) 0 1px,transparent 1px 25%)}
+.bar{flex:1;display:flex;align-items:flex-end;gap:2px;height:100%;position:relative}
+.bar i{flex:1;border-radius:3px 3px 0 0;height:0;transition:height 1s cubic-bezier(.2,.8,.2,1)}
+.bar i.v{background:var(--teal)}.bar i.r{background:var(--amber)}
+.bar span{position:absolute;bottom:-26px;left:0;font-family:'DM Mono';font-size:11px;color:var(--mut);white-space:nowrap}
+.chart{margin-bottom:40px}
+.bar:hover i{filter:brightness(1.25)}
+
+/* brands */
+.brow{display:grid;grid-template-columns:60px 1.2fr 1.4fr 220px;gap:20px;align-items:baseline;border-top:1px solid var(--line);padding:24px 0}
+.brow h3{font-size:clamp(26px,3vw,42px);letter-spacing:-.02em}
+.brow p{color:var(--mut);margin-top:6px}
+.plat{color:var(--soft)}
+.brands{border-bottom:1px solid var(--line)}
+.brow .role{text-align:right;font-size:12px}
+
+/* work */
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.filters{display:flex;gap:10px;margin-bottom:clamp(34px,5vw,64px);flex-wrap:wrap}
+.filters button{border:1px solid var(--line);padding:10px 22px;border-radius:999px;font-size:15px;color:var(--soft);transition:.2s}
+.filters button.on,.filters button:hover{border-color:var(--teal);color:var(--teal)}
+.filters button.on{background:rgba(45,212,191,.1)}
+.masonry{columns:3 300px;column-gap:24px}
+.work-item{break-inside:avoid;margin-bottom:24px;transition:opacity .3s,transform .3s}
+.work-item.hide{display:none}
+.zoom{display:block;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.zoom img{width:100%;transition:transform .5s}
+.zoom:hover img{transform:scale(1.03)}
+figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:14px;font-size:15px}
+.work-item figcaption span{font-weight:700}.work-item figcaption em{font-style:normal;color:var(--teal);font-family:'DM Mono';font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+
+/* cards */
+.sub{margin:44px 0 18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.lcard,.ccard,.qrcard{display:block;border:1px solid var(--line);border-radius:18px;padding:26px 28px;background:rgba(255,255,255,.03);transition:.25s}
+.lcard:hover,.ccard:hover,.qrcard:hover{border-color:var(--teal);transform:translateY(-3px);background:rgba(45,212,191,.05)}
+.lcard h3{font-size:30px;margin:14px 0 8px;letter-spacing:-.01em}
+.ccard{display:flex;gap:28px;align-items:center;padding:30px 34px}
+.ccard h3{font-size:30px;margin:10px 0 10px;letter-spacing:-.01em}
+.stack{position:relative;width:108px;height:108px;flex:none}
+.stack i{position:absolute;width:72px;height:90px;border-radius:10px;border:1px solid rgba(45,212,191,.8);background:rgba(45,212,191,.14);transition:.3s}
+.stack i:nth-child(2){left:16px;top:8px;opacity:.6}.stack i:nth-child(3){left:32px;top:16px;opacity:.35}
+.ccard:hover .stack i:nth-child(2){left:26px}.ccard:hover .stack i:nth-child(3){left:52px}
+
+/* tiktok */
+.giant{font-family:'Bric';font-weight:700;font-size:clamp(100px,19vw,300px);letter-spacing:-.06em;line-height:.88}
+.big{font-size:clamp(30px,4vw,60px);margin:18px 0 22px}
+.mini{display:flex;gap:56px;margin-top:40px}
+.mini div{border-top:1px solid var(--line);padding-top:16px;min-width:140px}
+.mini b{display:block;font-family:'Bric';font-size:clamp(36px,4vw,60px);letter-spacing:-.03em;line-height:1}
+.mini .mono{display:block;margin-top:10px}
+.shot img{border-radius:14px;border:1px solid var(--line);box-shadow:0 30px 60px rgba(0,0,0,.4);width:100%}
+.shot figcaption{font-size:12px}
+.qrcard{display:flex;gap:28px;align-items:center;margin-top:26px}
+.qr{width:150px;height:150px;border-radius:10px;flex:none}
+.qrcard h3{font-size:28px;margin:10px 0}
+
+/* video */
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px)}
+.vcol p{font-size:clamp(24px,2.4vw,32px);margin:8px 0 18px;color:var(--soft)}
+.vcol a{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding:15px 4px;transition:.2s}
+.vcol a span{font-family:'Bric';font-weight:700;font-size:22px;letter-spacing:-.01em}
+.vcol a em{font-style:normal;font-size:12px}
+.vcol a:hover{padding-left:12px;background:rgba(255,255,255,.03)}
+.onscreen{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,.6fr) minmax(0,1.6fr);gap:24px;margin-top:clamp(50px,7vw,100px);align-items:start}
+.phone img{border-radius:14px;border:1px solid var(--line);width:100%;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.phone figcaption{flex-direction:column;gap:4px;font-size:12px}
+
+/* ads */
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:30px 36px;margin:26px 0 34px}
+.kpis div{border-top:1px solid var(--line);padding-top:14px}
+.kpis b{display:block;font-family:'Bric';font-size:clamp(34px,4vw,62px);letter-spacing:-.03em;line-height:1}
+.kpis .mono{display:block;margin-top:10px;font-size:12px}
+.ads figure.shot img{background:#fff}
+
+/* contact */
+dl{display:grid;grid-template-columns:130px 1fr;gap:18px 20px;font-size:clamp(18px,2vw,26px);margin-top:40px;align-items:baseline}
+dd a{border-bottom:1px solid var(--teal)}dd a:hover{color:var(--teal)}
+.edu{color:var(--soft);margin:12px 0 34px;font-size:18px;border-top:1px solid var(--line);padding-top:14px}
+.certs{list-style:none;margin-top:12px}
+.certs li{border-top:1px solid var(--line);padding:14px 0;color:var(--soft);font-size:17px}
+.contact{border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;gap:16px;padding:26px var(--pad);border-top:1px solid var(--line)}
+.foot a:hover{color:var(--teal)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,8,18,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;gap:14px}
+.lb[hidden]{display:none}
+.lb img{max-height:84vh;max-width:92vw;border-radius:12px;border:1px solid var(--line)}
+.lbx{position:absolute;top:18px;right:26px;font-size:44px;color:var(--ink);line-height:1}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (max-width:1100px){
+ .stats{grid-template-columns:repeat(3,1fr)}
+ .brow{grid-template-columns:44px 1fr 1fr}.brow .role{grid-column:2/4;text-align:left}
+ .onscreen{grid-template-columns:1fr 1fr}.onscreen .yts{grid-column:1/3}
+ .grid3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+ .nav nav a:not(.pill){display:none}
+ .hero{grid-template-columns:1fr;padding:100px var(--pad) 30px;min-height:auto}
+ .hero-art{height:360px;min-height:0;mask-image:none;-webkit-mask-image:none;margin:20px calc(-1*var(--pad)) 0}
+ .mq{flex:none;width:100%}
+ .hero-art{flex-direction:column;gap:14px;height:auto}
+ .mq .track{flex-direction:row;animation:left 50s linear infinite}
+ .mq.rev .track{animation-direction:reverse}
+ .mq img{width:150px;flex:none}
+ @keyframes left{to{transform:translateX(-50%)}}
+ .two,.vgrid,.grid2,.ads{grid-template-columns:1fr}
+ .grid3{grid-template-columns:1fr}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .masonry{columns:2 150px;column-gap:14px}.work-item{margin-bottom:14px}
+ .brow{grid-template-columns:1fr}.brow .role{grid-column:auto}
+ .qrcard,.ccard{flex-direction:row}
+ dl{grid-template-columns:1fr;gap:4px}dd{margin-bottom:18px}
+ .mini{gap:30px}
+}
+@media (max-width:520px){
+ .masonry{columns:1}
+ .qrcard{flex-direction:column;align-items:flex-start}
+ .onscreen{grid-template-columns:1fr 1fr}
+ .bar span{display:none}.chart{margin-bottom:10px}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}.mq .track{animation:none}.js .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head><body>
+<header class="nav" id="top">
+  <a class="logo" href="#top" aria-label="Kainat Anam">KA<span>.</span></a>
+  <nav>
+    <a href="#about">About</a><a href="#work">Work</a><a href="#social">Social</a><a href="#video">Video</a><a href="#ads">Ads</a>
+    <a class="pill" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <span class="kicker">Portfolio · 2026</span>
+    <h1>Kainat<br>Anam</h1>
+    <p class="role ital">Social Media Manager</p>
+    <p class="mono tags">Paid Ads · Content Design · Video · ASO</p>
+    <div class="cta"><a class="btn primary" href="#work">View work</a><a class="btn" href="#contact">Get in touch</a></div>
+    <p class="mono sm loc">Sialkot, Pakistan</p>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="mq "><div class="track"><img src="assets/img/cl_hiring.webp" width="900" height="1125" alt="" class="" decoding="async"><img src="assets/img/ts_soft.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/cl_full.webp" width="800" height="800" alt="" class="" decoding="async"><img src="assets/img/ts_ecom.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/cl_ai.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/cl_hiring.webp" width="900" height="1125" alt="" class="" decoding="async"><img src="assets/img/ts_soft.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/cl_full.webp" width="800" height="800" alt="" class="" decoding="async"><img src="assets/img/ts_ecom.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/cl_ai.webp" width="800" height="1000" alt="" class="" decoding="async"></div></div><div class="mq rev"><div class="track"><img src="assets/img/ts_dm.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/ts_cloud.webp" width="900" height="898" alt="" class="" decoding="async"><img src="assets/img/cl_portal.webp" width="900" height="1125" alt="" class="" decoding="async"><img src="assets/img/cl_web.webp" width="900" height="900" alt="" class="" decoding="async"><img src="assets/img/ts_mobile.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/ts_dm.webp" width="800" height="1000" alt="" class="" decoding="async"><img src="assets/img/ts_cloud.webp" width="900" height="898" alt="" class="" decoding="async"><img src="assets/img/cl_portal.webp" width="900" height="1125" alt="" class="" decoding="async"><img src="assets/img/cl_web.webp" width="900" height="900" alt="" class="" decoding="async"><img src="assets/img/ts_mobile.webp" width="800" height="1000" alt="" class="" decoding="async"></div></div></div>
+</section>
+
+<section id="about" class="sec">
+  <span class="kicker reveal">01 / Profile</span>
+  <div class="two">
+    <div>
+      <h2 class="reveal">Pages that look consistent, get found <span class="ital teal">and convert.</span></h2>
+      <p class="lead reveal">Hands-on across content planning, Canva design, video editing, daily posting, community presence and paid campaigns on Meta Ads and Google Ads. Brand pages run end to end for a Germany-based software company and for US-based clients.</p>
+    </div>
+    <div class="skills"><div class="skill reveal"><span class="mono teal">01</span><div><h3>Social media management</h3><p>Page setup, content calendars, bios, SEO-optimized profiles, community engagement.</p></div></div><div class="skill reveal"><span class="mono teal">02</span><div><h3>Paid advertising</h3><p>Meta Ads and Google Ads setup, ad creatives, audience targeting.</p></div></div><div class="skill reveal"><span class="mono teal">03</span><div><h3>Design</h3><p>Canva posts, carousels, banners, posters, thumbnails and branded templates.</p></div></div><div class="skill reveal"><span class="mono teal">04</span><div><h3>Video</h3><p>Short-form editing, reels and TikTok content, viral content ideas.</p></div></div><div class="skill reveal"><span class="mono teal">05</span><div><h3>Marketing support</h3><p>App launch support, ASO and keyword research, copywriting.</p></div></div><div class="skill reveal"><span class="mono teal">06</span><div><h3>Platforms</h3><p>Facebook · Instagram · LinkedIn · X · TikTok · Threads · YouTube · Telegram.</p></div></div></div>
+  </div>
+</section>
+
+<section id="signal" class="sec">
+  <span class="kicker reveal">02 / Signal</span>
+  <div class="stats">
+    <div class="stat reveal"><b class="teal" data-to="99.5" data-dec="1" data-suf="K">99.5K</b><span class="mono">Views · viral TikTok</span></div>
+    <div class="stat reveal"><b data-to="17.9" data-dec="1" data-suf="K">17.9K</b><span class="mono">Views · 18 recent posts</span></div>
+    <div class="stat reveal"><b data-to="9.1" data-dec="1" data-suf="K">9.1K</b><span class="mono">Reach · same 18 posts</span></div>
+    <div class="stat reveal"><b class="amber" data-to="190" data-dec="0" data-suf="">190</b><span class="mono">Messaging conversations · Meta Ads</span></div>
+    <div class="stat reveal"><b data-to="2362" data-dec="0" data-suf="" data-comma="1">2,362</b><span class="mono">Clicks · Google Ads</span></div>
+  </div>
+  <div class="chartwrap reveal">
+    <div class="charthead"><h3 class="ital">Facebook &amp; Instagram, post by post</h3>
+      <div class="mono legend"><span><i class="dot t"></i>Views</span><span><i class="dot a"></i>Reach</span><span>16 Oct – 4 Nov</span></div></div>
+    <div class="chart" id="chart" role="img" aria-label="Bar chart of views and reach for 18 recent TechnoSofts posts"></div>
+  </div>
+</section>
+
+<section id="brands" class="sec">
+  <span class="kicker reveal">03 / Brands &amp; clients</span>
+  <h2 class="reveal">Pages I have <span class="ital teal">carried.</span></h2>
+  <div class="brands"><div class="brow reveal"><span class="mono teal">01</span><div><h3>CodeLife AI</h3><p>Germany-based software company</p></div><div class="plat">Facebook · Instagram · LinkedIn · X · TikTok</div><div class="mono amber role">All platforms</div></div><div class="brow reveal"><span class="mono teal">02</span><div><h3>TechnoSofts</h3><p>Software development company, Sialkot</p></div><div class="plat">Facebook · Instagram · TikTok · YouTube · LinkedIn</div><div class="mono amber role">Content, ads, ASO</div></div><div class="brow reveal"><span class="mono teal">03</span><div><h3>Zensol Tech</h3><p>Technology brand</p></div><div class="plat">LinkedIn · Instagram</div><div class="mono amber role">Content</div></div><div class="brow reveal"><span class="mono teal">04</span><div><h3>US-based clients</h3><p>Client pages</p></div><div class="plat">Design · content · posting</div><div class="mono amber role">Full page management</div></div><div class="brow reveal"><span class="mono teal">05</span><div><h3>Malik Mart Online</h3><p>Client page</p></div><div class="plat">Facebook</div><div class="mono amber role">Page management</div></div><div class="brow reveal"><span class="mono teal">06</span><div><h3>Al Falak Transports</h3><p>Client page</p></div><div class="plat">Facebook</div><div class="mono amber role">Page management</div></div></div>
+</section>
+
+<section id="work" class="sec">
+  <span class="kicker reveal">04 / Work</span>
+  <div class="head-row">
+    <h2 class="reveal">Selected <span class="ital teal">creatives.</span></h2>
+    <div class="filters reveal" role="tablist">
+      <button class="on" data-f="all">All</button><button data-f="codelife">CodeLife AI</button><button data-f="technosofts">TechnoSofts</button>
+    </div>
+  </div>
+  <div class="masonry" id="masonry"><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_hiring.webp" data-cap="CodeLife AI · Hiring campaign">
+      <button class="zoom" aria-label="Open Hiring campaign"><img src="assets/img/cl_hiring.webp" width="900" height="1125" alt="Hiring campaign poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Hiring campaign</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_web.webp" data-cap="CodeLife AI · Web development offer">
+      <button class="zoom" aria-label="Open Web development offer"><img src="assets/img/cl_web.webp" width="900" height="900" alt="Web development offer poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Web development offer</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_portal.webp" data-cap="CodeLife AI · Web portal service">
+      <button class="zoom" aria-label="Open Web portal service"><img src="assets/img/cl_portal.webp" width="900" height="1125" alt="Web portal service poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Web portal service</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_full.webp" data-cap="CodeLife AI · Full stack development">
+      <button class="zoom" aria-label="Open Full stack development"><img src="assets/img/cl_full.webp" width="800" height="800" alt="Full stack development poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Full stack development</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_seo.webp" data-cap="CodeLife AI · SEO marketing &amp; specialist">
+      <button class="zoom" aria-label="Open SEO marketing &amp; specialist"><img src="assets/img/cl_seo.webp" width="800" height="800" alt="SEO marketing and specialist poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>SEO marketing &amp; specialist</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_ai.webp" data-cap="CodeLife AI · AI service promotion">
+      <button class="zoom" aria-label="Open AI service promotion"><img src="assets/img/cl_ai.webp" width="800" height="1000" alt="AI service promotion poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>AI service promotion</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="codelife" data-full="assets/img/cl_build.webp" data-cap="CodeLife AI · Build your AI product">
+      <button class="zoom" aria-label="Open Build your AI product"><img src="assets/img/cl_build.webp" width="800" height="1000" alt="Build your AI product poster by CodeLife AI" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Build your AI product</span><em>CodeLife AI</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_soft.webp" data-cap="TechnoSofts · Software development">
+      <button class="zoom" aria-label="Open Software development"><img src="assets/img/ts_soft.webp" width="800" height="1000" alt="Software development poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Software development</span><em>TechnoSofts</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_cloud.webp" data-cap="TechnoSofts · Cloud computing">
+      <button class="zoom" aria-label="Open Cloud computing"><img src="assets/img/ts_cloud.webp" width="900" height="898" alt="Cloud computing poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Cloud computing</span><em>TechnoSofts</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_dm.webp" data-cap="TechnoSofts · Digital marketing agency">
+      <button class="zoom" aria-label="Open Digital marketing agency"><img src="assets/img/ts_dm.webp" width="800" height="1000" alt="Digital marketing agency poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Digital marketing agency</span><em>TechnoSofts</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_webapp.webp" data-cap="TechnoSofts · Web application development">
+      <button class="zoom" aria-label="Open Web application development"><img src="assets/img/ts_webapp.webp" width="800" height="1000" alt="Web application development poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Web application development</span><em>TechnoSofts</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_ecom.webp" data-cap="TechnoSofts · E-commerce marketing">
+      <button class="zoom" aria-label="Open E-commerce marketing"><img src="assets/img/ts_ecom.webp" width="800" height="1000" alt="E-commerce marketing poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>E-commerce marketing</span><em>TechnoSofts</em></figcaption></figure><figure class="card work-item" data-brand="technosofts" data-full="assets/img/ts_mobile.webp" data-cap="TechnoSofts · Mobile app development">
+      <button class="zoom" aria-label="Open Mobile app development"><img src="assets/img/ts_mobile.webp" width="800" height="1000" alt="Mobile app development poster by TechnoSofts" class="" loading="lazy" decoding="async"></button>
+      <figcaption><span>Mobile app development</span><em>TechnoSofts</em></figcaption></figure></div>
+</section>
+
+<section id="social" class="sec">
+  <span class="kicker reveal">05 / LinkedIn</span>
+  <h2 class="reveal">Pages, posts <span class="ital teal">&amp; carousels.</span></h2>
+  <p class="mono sub reveal">Company pages managed</p>
+  <div class="grid3"><a class="lcard reveal" href="https://www.linkedin.com/company/codelifeai/posts/" target="_blank" rel="noopener"><span class="mono teal">Company page</span><h3>CodeLife AI</h3><p class="mono sm">linkedin.com/company/codelifeai</p></a><a class="lcard reveal" href="https://www.linkedin.com/company/technosofts/posts/" target="_blank" rel="noopener"><span class="mono teal">Company page</span><h3>TechnoSofts</h3><p class="mono sm">linkedin.com/company/technosofts</p></a><a class="lcard reveal" href="https://www.linkedin.com/company/zensoltech/posts/?feedView=all" target="_blank" rel="noopener"><span class="mono teal">Company page</span><h3>Zensol Tech</h3><p class="mono sm">linkedin.com/company/zensoltech</p></a></div>
+  <p class="mono sub reveal">Selected posts</p>
+  <div class="grid3"><a class="lcard reveal" href="https://www.linkedin.com/posts/codelifeai_explore-9to5-workhumor-activity-7526259172896681984-N-lv" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>Work humor</h3><p class="mono sm">CodeLife AI</p></a><a class="lcard reveal" href="https://www.linkedin.com/posts/codelifeai_aichatbot-customerexperience-businessautomation-activity-7525881507283009536-JTeU" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>AI chatbot</h3><p class="mono sm">CodeLife AI</p></a><a class="lcard reveal" href="https://www.linkedin.com/posts/codelifeai_websitedesign-webdevelopment-customwebsite-activity-7525505764061413376-Me54" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>Custom websites</h3><p class="mono sm">CodeLife AI</p></a><a class="lcard reveal" href="https://www.linkedin.com/posts/zensoltech_the-future-of-business-is-intelligent-activity-7464961882085486593-mtkE" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>Future of business</h3><p class="mono sm">Zensol Tech</p></a><a class="lcard reveal" href="https://www.linkedin.com/posts/zensoltech_effective-business-growth-strategy-activity-7463531603596607489-zXP2" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>Growth strategy</h3><p class="mono sm">Zensol Tech</p></a><a class="lcard reveal" href="https://www.linkedin.com/posts/zensoltech_build-the-future-with-zensol-activity-7463171335624716288-cdCh" target="_blank" rel="noopener"><span class="mono amber">Post</span><h3>Build the future</h3><p class="mono sm">Zensol Tech</p></a></div>
+  <p class="mono sub reveal">Carousels</p>
+  <div class="grid2"><a class="ccard reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7517977922369089537" target="_blank" rel="noopener">
+  <div class="stack"><i></i><i></i><i></i></div><div><span class="mono teal">Carousel 01</span><h3>Open on LinkedIn</h3><p class="mono sm">Swipe through the slides →</p></div></a><a class="ccard reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7521878409405448193" target="_blank" rel="noopener">
+  <div class="stack"><i></i><i></i><i></i></div><div><span class="mono teal">Carousel 02</span><h3>Open on LinkedIn</h3><p class="mono sm">Swipe through the slides →</p></div></a><a class="ccard reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7521108054579449856" target="_blank" rel="noopener">
+  <div class="stack"><i></i><i></i><i></i></div><div><span class="mono teal">Carousel 03</span><h3>Open on LinkedIn</h3><p class="mono sm">Swipe through the slides →</p></div></a><a class="ccard reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7520809820686364673" target="_blank" rel="noopener">
+  <div class="stack"><i></i><i></i><i></i></div><div><span class="mono teal">Carousel 04</span><h3>Open on LinkedIn</h3><p class="mono sm">Swipe through the slides →</p></div></a></div>
+</section>
+
+<section id="tiktok" class="sec tiktok">
+  <span class="kicker reveal">06 / TikTok</span>
+  <div class="two">
+    <div>
+      <div class="giant teal reveal"><span data-to="99.5" data-dec="1" data-suf="K">99.5K</span></div>
+      <p class="ital big reveal">views on a single TikTok.</p>
+      <p class="lead reveal">A viral video on the TechnoSofts account, pinned at the top of the profile.</p>
+      <div class="mini reveal"><div><b>261</b><span class="mono">Followers</span></div><div><b>1,426</b><span class="mono">Likes</span></div></div>
+    </div>
+    <div>
+      <figure class="shot reveal"><img src="assets/img/tiktok.webp" width="1400" height="626" alt="TechnoSofts TikTok profile showing a pinned video with 99.5K views" class="" loading="lazy" decoding="async"><figcaption class="mono"><span>TechnoSofts · TikTok profile</span><span class="teal">@technosofts08</span></figcaption></figure>
+      <a class="qrcard reveal" href="https://www.tiktok.com/@technosofts08/video/7628517630898457876" target="_blank" rel="noopener">
+        <img src="assets/img/qr.png" width="444" height="444" alt="QR code linking to the TikTok video" class="qr" loading="lazy" decoding="async">
+        <div><span class="mono teal">Watch the video</span><h3>Scan or click to open on TikTok</h3><p class="mono sm">tiktok.com/@technosofts08</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="video" class="sec">
+  <span class="kicker reveal">07 / Video library</span>
+  <h2 class="reveal">Reels, shorts <span class="ital teal">&amp; videos.</span></h2>
+  <div class="vgrid"><div class="vcol reveal"><span class="mono amber">Instagram Reels</span><p class="ital">Brand &amp; services reels</p><a href="https://www.instagram.com/reel/DXq7DuTiHjO/" target="_blank" rel="noopener"><span>Reel 01</span><em class="mono amber">Watch →</em></a><a href="https://www.instagram.com/reel/DWyjdgngK4M/" target="_blank" rel="noopener"><span>Reel 02</span><em class="mono amber">Watch →</em></a><a href="https://www.instagram.com/reel/DYML49sFOS1/" target="_blank" rel="noopener"><span>Reel 03</span><em class="mono amber">Watch →</em></a><a href="https://www.instagram.com/reel/DX_sD-QjFYY/" target="_blank" rel="noopener"><span>Reel 04</span><em class="mono amber">Watch →</em></a></div><div class="vcol reveal"><span class="mono teal">TikTok</span><p class="ital">@technosofts08</p><a href="https://www.tiktok.com/@technosofts08/video/7628517630898457876" target="_blank" rel="noopener"><span>Viral video</span><em class="mono teal">99.5K views →</em></a><a href="https://www.tiktok.com/@technosofts08" target="_blank" rel="noopener"><span>IT Company Nowadays</span><em class="mono teal">29K views →</em></a><a href="https://www.tiktok.com/@technosofts08" target="_blank" rel="noopener"><span>POV: Corporate at 23</span><em class="mono teal">23.8K views →</em></a></div><div class="vcol reveal"><span class="mono teal">YouTube</span><p class="ital">Shorts &amp; videos</p><a href="https://youtube.com/shorts/Jxo2RQcpSuo" target="_blank" rel="noopener"><span>Short 01</span><em class="mono teal">Watch →</em></a><a href="https://youtube.com/shorts/QB8aqAYVQpA" target="_blank" rel="noopener"><span>Short 02</span><em class="mono teal">Watch →</em></a><a href="https://youtube.com/shorts/5CxMxtF6I_U" target="_blank" rel="noopener"><span>Short 03</span><em class="mono teal">Watch →</em></a><a href="https://youtube.com/shorts/pPnXr6zTszI" target="_blank" rel="noopener"><span>Short 04</span><em class="mono teal">Watch →</em></a><a href="https://youtube.com/shorts/nKK2KA9MA4A" target="_blank" rel="noopener"><span>Short 05</span><em class="mono teal">Watch →</em></a><a href="https://youtube.com/shorts/3KyCtw34qD0" target="_blank" rel="noopener"><span>Short 06</span><em class="mono teal">Watch →</em></a><a href="https://youtu.be/mnjmApUBwms" target="_blank" rel="noopener"><span>Video 01</span><em class="mono teal">Watch →</em></a><a href="https://youtu.be/ptjYZb3sIdo" target="_blank" rel="noopener"><span>Video 02</span><em class="mono teal">Watch →</em></a><a href="https://youtu.be/QgrvcbLY7J4" target="_blank" rel="noopener"><span>Video 03</span><em class="mono teal">Watch →</em></a></div></div>
+  <div class="onscreen">
+    <figure class="phone reveal"><img src="assets/img/tt1.webp" width="351" height="544" alt="TikTok video: POV You are in Corporate but you are also 23, 23.8K views" class="" loading="lazy" decoding="async"><figcaption class="mono"><span>POV: Corporate at 23</span><span class="teal">23.8K</span></figcaption></figure>
+    <figure class="phone reveal"><img src="assets/img/tt2.webp" width="348" height="544" alt="TikTok video: IT Company Nowadays, 29K views" class="" loading="lazy" decoding="async"><figcaption class="mono"><span>IT Company Nowadays</span><span class="teal">29K</span></figcaption></figure>
+    <figure class="shot yts reveal"><img src="assets/img/yt.webp" width="1400" height="655" alt="TechnoSofts YouTube Studio dashboard with 1,317 subscribers" class="" loading="lazy" decoding="async"><figcaption class="mono"><span>TechnoSofts · YouTube Studio</span><span class="teal">1,317 subscribers</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="ads" class="sec">
+  <span class="kicker reveal">08 / Paid ads</span>
+  <h2 class="reveal">Ads that <span class="ital teal">deliver.</span></h2>
+  <div class="two ads">
+    <div class="reveal">
+      <span class="mono amber">Meta Ads · Engagement campaign</span>
+      <div class="kpis"><div><b class="amber">190</b><span class="mono">Messaging conversations</span></div><div><b>Rs53.85</b><span class="mono">Cost per conversation</span></div><div><b>73,813</b><span class="mono">Impressions</span></div><div><b>Rs10.2K</b><span class="mono">Amount spent</span></div></div>
+      <figure class="shot"><img src="assets/img/meta_ads.webp" width="1150" height="118" alt="Meta Ads Manager results table" class="" loading="lazy" decoding="async"><figcaption class="mono">Ads Manager · results</figcaption></figure>
+    </div>
+    <div class="reveal">
+      <span class="mono teal">Google Ads · Search campaigns</span>
+      <div class="kpis"><div><b class="teal">2,362</b><span class="mono">Clicks</span></div><div><b>5.33%</b><span class="mono">Interaction rate</span></div><div><b>44,293</b><span class="mono">Impressions</span></div><div><b>AED2.26</b><span class="mono">Average cost</span></div></div>
+      <figure class="shot"><img src="assets/img/google_ads.webp" width="791" height="160" alt="Google Ads account totals" class="" loading="lazy" decoding="async"><figcaption class="mono">Google Ads · Feb – Nov 2026, all time</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <span class="kicker reveal">09 / Contact</span>
+  <h2 class="mega reveal">Let's build<br>your <span class="ital teal">presence.</span></h2>
+  <div class="two">
+    <dl class="reveal">
+      <dt class="mono">Email</dt><dd><a href="mailto:kainatanam607@gmail.com">kainatanam607@gmail.com</a></dd>
+      <dt class="mono">Phone</dt><dd><a href="tel:+923054775220">+92 305 4775220</a></dd>
+      <dt class="mono">LinkedIn</dt><dd><a href="https://linkedin.com/in/kainatanam-21487b3a7" target="_blank" rel="noopener">linkedin.com/in/kainatanam-21487b3a7</a></dd>
+      <dt class="mono">Based in</dt><dd>Sialkot, Pakistan</dd>
+    </dl>
+    <div class="reveal">
+      <span class="mono teal">Education</span>
+      <p class="edu">BS Information Technology · Virtual University of Pakistan · 2023</p>
+      <span class="mono teal">Certifications</span>
+      <ul class="certs"><li>Foundations of Digital Marketing &amp; E-commerce · Google · May 2026</li><li>Google Project Management Professional Certificate · Google · May 2026</li><li>AI SEO: Mastering Generative Engine Optimization · SkillUp · Apr 2026</li><li>Accelerate Your Job Search with AI · Google · Apr 2026</li></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><span class="mono">Kainat Anam · Portfolio 2026</span><a class="mono" href="#top">Back to top ↑</a></footer>
+
+<div class="lb" id="lb" hidden><button class="lbx" aria-label="Close">×</button><img alt=""><p class="mono"></p></div>
+<script>(function(){
+var posts=[["16 Oct", 1519, 901], ["16 Oct", 1436, 568], ["17 Oct", 942, 509], ["19 Oct", 1056, 511], ["20 Oct", 421, 203], ["21 Oct", 792, 423], ["22 Oct", 666, 371], ["24 Oct", 420, 214], ["26 Oct", 1830, 1044], ["27 Oct", 837, 480], ["28 Oct", 740, 444], ["29 Oct", 557, 320], ["30 Oct", 413, 276], ["31 Oct", 906, 543], ["2 Nov", 919, 524], ["2 Nov", 1801, 357], ["3 Nov", 1476, 813], ["4 Nov", 1145, 646]];
+// chart
+var chart=document.getElementById('chart');
+if(chart){
+  var max=2000,html='';
+  posts.forEach(function(p,i){
+    html+='<div class="bar" title="'+p[0]+' · '+p[1].toLocaleString()+' views · '+p[2].toLocaleString()+' reach">'
+      +'<i class="v" data-h="'+(p[1]/max*100)+'"></i><i class="r" data-h="'+(p[2]/max*100)+'"></i>'
+      +(i%3===0?'<span>'+p[0]+'</span>':'')+'</div>';
+  });
+  chart.innerHTML=html;
+}
+function growBars(){document.querySelectorAll('#chart i').forEach(function(b){b.style.height=b.dataset.h+'%'})}
+// count up
+function countUp(el){
+  var to=parseFloat(el.dataset.to),dec=+el.dataset.dec,suf=el.dataset.suf||'',comma=el.dataset.comma;
+  var t0=null,dur=1400;
+  function fmt(v){var s=v.toFixed(dec);if(comma)s=Number(s).toLocaleString('en-US');return s+suf}
+  function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/dur,1);k=1-Math.pow(1-k,3);el.textContent=fmt(to*k);if(k<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+}
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-to]').forEach(function(n){if(!reduce)countUp(n)});
+      if(e.target.classList.contains('chartwrap'))growBars();
+      io.unobserve(e.target);
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(n){io.observe(n)});
+}else{
+  document.querySelectorAll('.reveal').forEach(function(n){n.classList.add('in')});growBars();
+}
+// filters
+var btns=document.querySelectorAll('.filters button');
+btns.forEach(function(b){b.addEventListener('click',function(){
+  btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+  var f=b.dataset.f;
+  document.querySelectorAll('.work-item').forEach(function(it){it.classList.toggle('hide',f!=='all'&&it.dataset.brand!==f)});
+})});
+// lightbox
+var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),lbp=lb.querySelector('p');
+document.querySelectorAll('.work-item').forEach(function(it){
+  it.querySelector('.zoom').addEventListener('click',function(){
+    lbi.src=it.dataset.full;lbi.alt=it.dataset.cap;lbp.textContent=it.dataset.cap;lb.hidden=false;document.body.style.overflow='hidden';
+  });
+});
+function closeLb(){lb.hidden=true;document.body.style.overflow='';lbi.src=''}
+lb.addEventListener('click',closeLb);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)closeLb()});
+})();
+</script>
+</body></html>
